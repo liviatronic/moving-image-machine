@@ -10,23 +10,23 @@
 </head>
 
 <body>
-  <button onclick="openWin()">Start the machine</button>
-  <button onclick="resizeWin()">Resize Window</button>
+  <button onclick="openWin()">Start</button>
+  <button onclick="resizeWin()">Run</button>
 
   <script>
     var myWindow;
 
     function openWin() {
       myWindow = window.open("page.html", "_blank",
-        "width=1, height=800");
+        "width=500, height=800");
     }
 
     function resizeWin() {
       myWindow
-      var start = 10;
-      var end = 1000;
+      var start = 500;
+      var end = 1400;
       for (var i = start; i <= end; i++) {
-        myWindow.resizeTo(i, 900);
+        myWindow.resizeTo(i, 800);
         myWindow.focus();
       }
     }
