@@ -1,13 +1,14 @@
 $(document).ready(function ($) {
 
     var start = 1;
-    var img1Limit = 30;
+    var rowcut1 = 30;
+    var columncut1 = 30;
     var img2Limit = 40;
-    var img3Limit = 2;
+    //var img3Limit = 2;
 
     // load image 1
-    for (var i = start; i <= img1Limit; i++) {
-        for (var m = start; m <= img1Limit; m++) {
+    for (var i = start; i <= rowcut1; i++) {    ///rows 
+        for (var m = start; m <= columncut1; m++) { // columns
             $('.img1-container').append('<img class="bit1" src="images/img1/image_' + i + '_' + m + '.jpeg">');
         }
     }
